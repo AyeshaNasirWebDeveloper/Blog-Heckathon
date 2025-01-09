@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coranu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="offcanvas offcanvas-start mybg" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">
+        <img src="images/logo.png" alt="logo" id="logo">
+        <span class="italic-text">Coranu</span>
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row sideBar">
+        <div class="col">
+          <h6 class="text-white mb-4">Blog Topics</h6>
+          <ul class="sidenav">
+            <li><span id="ai">AI</span></li>
+            <li><span id="web3">Web3</span></li>
+            <li><span id="design">Design</span></li>
+            <li><span id="tech">Technology</span></li>
+            <li><span id="crypto">Crypto</span></li>
+            <li><span id="com">Company</span></li>
+            <li><span id="work">Work</span></li>
+          </ul>
+        </div>
+        <div class="col pt-3">
+          <h6 class="text-white mb-4">Guide and Tools</h6>
+          <ul class="sidenav">
+            <li><span>Guidelines</span></li>
+            <li><span>Mentorship</span></li>
+            <li><span>Tutorial</span></li>
+            <li><span>Training</span></li>
+            <li><span>Career</span></li>
+            <li><span>Self Care</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container-fluid start">
+    <div class="head mt-4">
+      <div class="row">
+        <div class="col-md-6">
+
+          <button class="btn mt-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+            aria-controls="staticBackdrop">
+            <img src="images/logo.png" alt="logo" id="logo">
+            <span class="logo-head">Coranu</span>
+          </button>
+        </div>
+        <div class="col-md-6">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" id="search-val"
+              title="Search by Category">
+            <button class="btn btn-secondary me-2" type="submit" id="searchBtn">Search</button>
+            <button type="button" class="btn btn-primary" id="goLogin">Login/Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="container">
+    <div class="head mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-primary mb-3">Thoughts, Ideas, and Stories</h2>
+          <p class="text-muted">A space where creativity flows, ideas take shape, and stories come to life. Dive in,
+            explore, and connect with insights that inspire and resonate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Trending Topics -->
+  <div class="container">
+    <div class="row pt-5">
+      <div class="col">
+        <h5 class="text-secondary" id="trending">Trending Topics</h5>
+        <div class="btn-group pt-2">
+          <button class="btn btn-outline-primary category-btn" data-category="all">All Posts</button>
+          <button class="btn btn-outline-secondary category-btn" data-category="Design Thinking">Design
+            Thinking</button>
+          <button class="btn btn-outline-secondary category-btn" data-category="Technology">Technology</button>
+          <button class="btn btn-outline-secondary category-btn" data-category="Web3">Web3</button>
+          <button class="btn btn-outline-secondary category-btn" data-category="Programming">Programming</button>
+          <button class="btn btn-outline-secondary category-btn" data-category="AI">AI</button>
+        </div>
+        <div id="displayPosts" class="mt-5"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footers -->
+
+  <div class="container-fluid">
+    <footer class="py-5">
+      <div class="row ">  
+        <div class="col-4 offset-1">
+          <form>
+            <p class="text-primary">Stay up to date</p>
+            <h5>Join Our Newsletter</h5>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email your Email">
+              <button class="btn btn-primary" type="button">Submit</button>
+            </div>
+            <p class="text-primary">*You can unsubscribe anytime</p>
+          </form>
+        </div>
+        <div class="col-6 text-end">
+          <img src="./images/Ellipse 4.png" alt="">
+      </div>
+  
+      <!-- <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>© 2021 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div> -->
+    </footer>
+  </div>
+
+
+ 
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="scripts/firebase.js" type="module"></script>
+  <script src="scripts/app.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

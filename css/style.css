@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidenav {
+    list-style: none;
+  }
+  
+  .sidenav li {
+    background-color: white;
+    letter-spacing: 0.1em;
+    width: 11em;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin: 0.5em;
+    text-align: center;
+    border-radius: 19px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sidenav li span {
+    color: white;
+    mix-blend-mode: difference;
+  }
+  
+  .sidenav li::before {
+    content: '';
+    position: absolute;
+    width: 3em;
+    height: inherit;
+    background-color: rgb(209, 209, 248);
+    border-radius: 50%;
+    top: 0;
+    left: -0.75em;
+    transition: 0.5s ease-out;
+  }
+  
+  .sidenav li:hover::before {
+    transform: scale(7);
+  }
+
+  :root {
+    --mycolor: rgb(44, 44, 155);
+    --lightColor: rgb(96, 96, 192);
+}
+
+#logo {
+    width: 57px;
+    animation: logoAnimate 9s linear infinite;
+}
+
+.sideBar {
+    font-size: 13px;
+}
+
+.btns button, .catBtn, button, input, .card, .both {
+    border-radius: 19px !important;
+}
+
+#guest {
+    font-size: 12px;
+    color: rgb(40, 40, 209);
+}
+
+.card {
+    background-color: rgb(245, 245, 245) !important;
+}
+
+.navbar {
+    background-color: rgb(209, 209, 248);
+}
+
+.btnedit {
+    background-color: rgb(209, 209, 248) !important;
+}
+
+.btnedit:hover {
+    background-color: rgb(60, 60, 121) !important;
+    color: white !important;
+}
+
+.btndlt {
+    background-color: rgb(182, 182, 182) !important;
+}
+
+.btndlt:hover {
+    color: white !important;
+}
+
+.card-title {
+    color: rgb(52, 52, 138) !important;
+}
+
+.above {
+    position: fixed !important;
+    top: 0;
+    left: 0 !important;
+    z-index: 2;
+}
+
+.myoffcanvas {
+    margin-top: 90px !important;
+}
+
+.btnLogin {
+    background-color: var(--mycolor) !important;
+    color: white !important;
+}
+
+.btnLogin:hover {
+    background-color: var(--lightColor) !important;
+    color: white !important;
+}
+
+.btnsearch {
+    border: 1px solid var(--mycolor) !important;
+    color: var(--mycolor) !important;
+}
+
+.btnsearch:hover {
+    background-color: var(--mycolor) !important;
+    color: white !important;
+}
+
+#addPost {
+    width: 40px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.offcanvas {
+    width: 300px !important;
+}
+
+.mybg {
+    background-color: rgb(137, 137, 193) !important;
+}
+
+.logo-head {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    background: linear-gradient(to left, hsl(214, 67%, 91%) 0%, #06538e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.all {
+    background-color: var(--mycolor) !important;
+    color: white !important;
+}
+
+.all:hover {
+    background-color: var(--lightColor) !important;
+}
+
+.otherBtns {
+    border: 1px solid rgb(160, 160, 203) !important;
+    color: var(--mycolor) !important;
+}
+
+.otherBtns:hover {
+    background-color: rgb(160, 160, 203) !important;
+    color: white !important;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #555;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    .opt {
+        margin-bottom: 15px !important;
+    }
+}
+
+@keyframes logoAnimate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+ .color{
+    color: rgb(grey, blue, white) !important;
+ }
+
